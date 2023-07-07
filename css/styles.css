@@ -48,8 +48,9 @@ footer{
     padding: 30px 0;
 }
 
-footer h5{
+footer h6{
     margin-bottom: 25px;
+    font-size: small;
     margin-top: 20px;
     font-weight: 600;
     color: white;
@@ -132,7 +133,7 @@ h3{
 }
 
 
-/* estilos del contenido principal en la pagina de planes  */
+/* estilos del contenido principal en la pagina de plantel  */
 
 /* estilos del contenido principal en la pagina de partidos  */
 
