@@ -9,17 +9,17 @@
 
 @font-face {
     font-family: "Poppins";
-    src: url(/fonts/Poppins-Regular.ttf);
+    src: url(./fonts/Poppins-Regular.ttf);
 }
 
 @font-face {
     font-family: "Poppins Light";
-    src: url(/fonts/Poppins-Light.ttf);
+    src: url(./fonts/Poppins-Light.ttf);
 }
 
 @font-face {
     font-family: "Poppins Medium";
-    src: url(/fonts/Poppins-Medium.ttf);
+    src: url(./fonts/Poppins-Medium.ttf);
 }
 
 /* Normalice */
@@ -33,7 +33,7 @@
 header.index{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/img/campeones.jpg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(./img/campeones.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -142,7 +142,7 @@ h3{
 header.galeria{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/img/festejo.jpg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(./img/festejo.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
