@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/07a7b146eb.js" crossorigin="anonymous"></script>
+    <title>CAMPEONES DEL MUNDO</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header class="index">
+        <nav>
+            <a href="./index.html"><img src="./img/logo2.png" alt="ADIDAS TRES ESTRELLAS"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="./index.html">INICIO</a></li>
+                    <li><a href="./plantel.html">PLANTEL</a></li>
+                    <li><a href="./partidos.html">PARTIDOS</a></li>
+                    <li><a href="./galeria.html">GALERIA</a></li>
+                    <li><a href="./contacto.html">CONTACTO</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>CAMPEONES DEL MUNDO 2022</h1>
+        </div>
+    </header>
+    <section class="intro">
+        <h2>HISTORIA DE LOS MUNDIALES</h2>
+        <p>
+            La Copa Mundial de la FIFA, también conocida como Copa del Mundo o Mundial, es el torneo internacional
+            más
+            importante de fútbol masculino a nivel de selecciones nacionales. Se celebra cada cuatro años desde
+            1930,
+            excepto en 1942 y 1946 debido a la Segunda Guerra Mundial. El torneo consta de dos etapas principales:
+            una
+            fase de clasificación en la que participan más de 200 selecciones nacionales y una fase final que se
+            lleva a
+            cabo durante aproximadamente un mes en una sede previamente determinada. A partir de la edición de 2026,
+            participarán 48 equipos en la fase final.</p>
+    </section>
+    <section>
+        <div class="row">
+            <div class="historia-col">
+                <img src="./img/argentina78.jpg">
+                <div class="layer">
+                    <h3>1978</h3>
+                </div>
+            </div>
+            <div class="historia-col">
+                <img src="./img/argentina86.jpg">
+                <div class="layer">
+                    <h3>1986</h3>
+                </div>
+            </div>
+            <div class="historia-col">
+                <img src="./img/argentina22.jpg">
+                <div class="layer">
+                    <h3>2022</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h3>MOMENTOS DESTACADOS</h3>
+            <h3>ESTADIOS</h3>
+            <h3>MASCOTA</h3>
+            <h3>PREMIOS</h3>
+            <h3>BALON OFICIAL</h3>
+        </div>
+    </section>
+    <footer id="footer">
+        <h5>Diseñado por Martin Ruchtein</h5>
+        <div class="redes">
+            <a href="https://www.instagram.com/afaseleccion/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/Argentina" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.youtube.com/@AFASeleccion" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </footer>
+    <script>
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMPEONES DEL MUNDO</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/07a7b146eb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+
+<body>
+    <header class="galeria">
+        <nav>
+            <a href="./index.html"><img src="./img/logo2.png" alt="ADIDAS TRES ESTRELLAS"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="./index.html">INICIO</a></li>
+                    <li><a href="./plantel.html">PLANTEL</a></li>
+                    <li><a href="./partidos.html">PARTIDOS</a></li>
+                    <li><a href="./galeria.html">GALERIA</a></li>
+                    <li><a href="./contacto.html">CONTACTO</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>GALERIA</h1>
+        </div>
+
+    </header>
+    <div class="container">
+        <div class="box">
+            <div class="full-img" id="fullImgBox">
+                <img src="./img/1.jpg" id="fullImg">
+                <span onclick="closeFullImg()">X</span>
+            </div>
+            <div class="mundial">
+                <img src="./img/1.jpg"  onclick="openFullImg(this.src)">
+                <img src="./img/2.jpg" onclick="openFullImg(this.src)">
+                <img src="./img/3.jpg" onclick="openFullImg(this.src)">
+                <img src="./img/4.jpg" onclick="openFullImg(this.src)">
+                <img src="./img/5.jpg" onclick="openFullImg(this.src)">
+                <img src="./img/11.jpg" onclick="openFullImg(this.src)">
+                <img src="./img/12.jpg" onclick="openFullImg(this.src)">
+                <img src="./img/13.jpg" onclick="openFullImg(this.src)">
+                
+            </div>
+            <div class="mundial">
+                <img src="./img/6.jpg" onclick="openFullImg(this.src)">
+                <img src="./img/7.jpg" onclick="openFullImg(this.src)">
+                <img src="./img/8.jpg" onclick="openFullImg(this.src)">
+                <img src="./img/9.jpg" onclick="openFullImg(this.src)">
+                <img src="./img/10.jpg" onclick="openFullImg(this.src)">
+                <img src="./img/14.jpg" onclick="openFullImg(this.src)">
+                <img src="./img/15.jpg" onclick="openFullImg(this.src)">
+                
+            </div>
+            
+        </div>
+    </div>
+    <footer id="footer">
+        <h5>Diseñado por Martin Ruchtein</h5>
+        <div class="redes">
+            <a href="https://www.instagram.com/afaseleccion/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/Argentina" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.youtube.com/@AFASeleccion" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </footer>
+    <script>
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg")
+
+        function openFullImg(pic){
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+        }
+
+        function closeFullImg(){
+            fullImgBox.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
