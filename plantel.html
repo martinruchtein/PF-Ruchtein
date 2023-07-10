@@ -11,33 +11,89 @@
 </head>
 
 <body>
-    <header>
-        <h1>PLANTEL</h1>
-        <div class="topnav">
-            <a href="./index.html">INICIO</a>
-            <a href="./plantel.html">PLANTEL</a>
-            <a href="./partidos.html">PARTIDOS</a>
-            <a href="./galeria.html">GALERIA</a>
-            <a href="./contacto.html">CONTACTO</a>
+    <header class="plantel">
+        <nav>
+            <a href="./index.html"><img src="./img/logo2.png" alt="ADIDAS TRES ESTRELLAS"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="./index.html">INICIO</a></li>
+                    <li><a href="./plantel.html">PLANTEL</a></li>
+                    <li><a href="./partidos.html">PARTIDOS</a></li>
+                    <li><a href="./galeria.html">GALERIA</a></li>
+                    <li><a href="./contacto.html">CONTACTO</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>PLANTEL</h1>
         </div>
     </header>
     <section class="arqueros">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col">
-                    <img src="./img/plantel/dibu.png">
-                </div>
-                <div class="col">
-                    <img src="./img/plantel/dibu.png">
-                </div>
-                <div class="col">
-                    <img src="./img/plantel/dibu.png">
-                </div>
-                <div class="col">
-                    <img src="./img/plantel/dibu.png">
-                </div>
-            </div>
+        <h2>ARQUEROS</h2>
+        <div class="columna">
+            <div class="column"><img src="./img/plantel/dibu.png"></div>
+            <div class="column"><img src="./img/plantel/armani.png"></div>
+            <div class="column"><img src="./img/plantel/rulli.png"></div>
+        </div>
     </section>
+    <section class="defensores">
+        <h2>DEFENSORES</h2>
+        <div class="columna">
+            <div class="column"><img src="./img/plantel/acuna.png"></div>
+            <div class="column"><img src="./img/plantel/cuti.png"></div>
+            <div class="column"><img src="./img/plantel/otamendi.png"></div>
+            <div class="column"><img src="./img/plantel/lisandro.png"></div>
+        </div>
+        <div class="columna">
+            <div class="column"><img src="./img/plantel/montiel.png"></div>
+            <div class="column"><img src="./img/plantel/molina.png"></div>
+            <div class="column"><img src="./img/plantel/foyth.png"></div>
+            <div class="column"><img src="./img/plantel/tagliafico.png"></div>
+        </div>
+        <div class="columna">
+            <div class="column"><img src="./img/plantel/pezzela.png"></div>
+        </div>
+    </section>
+    <section class="mediocampistas">
+        <h2>MEDIOCAMPISTAS</h2>
+        <div class="columna">
+            <div class="column"><img src="./img/plantel/paredes.png"></div>
+            <div class="column"><img src="./img/plantel/palacios.png"></div>
+            <div class="column"><img src="./img/plantel/depaul.png"></div>
+            <div class="column"><img src="./img/plantel/enzo.png"></div>
+        </div>
+        <div class="columna">
+            <div class="column"><img src="./img/plantel/almada.png"></div>
+            <div class="column"><img src="./img/plantel/papu.png"></div>
+            <div class="column"><img src="./img/plantel/guido.png"></div>
+            <div class="column"><img src="./img/plantel/macallister.png"></div>
+        </div>
+    </section>
+    <section class="delanteros">
+        <h2>DELANTEROS</h2>
+        <div class="columna">
+            <div class="column"><img src="./img/plantel/messi.png"></div>
+            <div class="column"><img src="./img/plantel/dimaria.png"></div>
+            <div class="column"><img src="./img/plantel/julian.png"></div>
+            <div class="column"><img src="./img/plantel/lautaro.png"></div>
+        </div>
+        <div class="columna">
+            <div class="column"><img src="./img/plantel/dybala.png"></div>
+            <div class="column"><img src="./img/plantel/correa.png"></div>
+        </div>
+    </section>
+    <script>
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
 </body>
 
 </html>

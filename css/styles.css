@@ -1,4 +1,4 @@
-*{
+* {
     font-family: Poppins;
     box-sizing: border-box;
     margin: 0;
@@ -30,7 +30,7 @@
 
 /* header */
 
-header.index{
+header.index {
     min-height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../img/campeones.jpg);
@@ -41,40 +41,41 @@ header.index{
 
 /* footer */
 
-footer{
+footer {
     background-color: #3ec6de;
     width: 100%;
     text-align: center;
     padding: 30px 0;
 }
 
-footer h6{
+footer h6 {
     margin-bottom: 25px;
     font-size: small;
     margin-top: 20px;
     font-weight: 600;
     color: white;
     font-family: Poppins Light
-    
 }
 
-.redes, i{
+.redes,
+i {
     color: white;
 }
 
-p, h4{
+p,
+h4 {
     font-family: Poppins Light;
 }
 
 /* estilos del contenido principal en la pagina de home  */
 
-.row{
-    margin-top:  5%;
+.row {
+    margin-top: 5%;
     display: flex;
     justify-content: space-between;
 }
 
-.intro-col{
+.intro-col {
     flex-basis: 31%;
     background: #3ec6de;
     border-radius: 10px;
@@ -83,17 +84,17 @@ p, h4{
     box-sizing: border-box;
 }
 
-h3{
+h3 {
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
 }
 
-.intro-col:hover{
+.intro-col:hover {
     box-shadow: 0 0 20px 0px #000c29;
 }
 
-.historia-col{
+.historia-col {
     display: flex;
     flex-basis: 33%;
     border-radius: 5px;
@@ -102,13 +103,13 @@ h3{
     overflow: hidden;
 }
 
-.historia-col img{
+.historia-col img {
     width: 100%;
     max-width: 100%;
     height: auto;
 }
 
-.layer{
+.layer {
     background: transparent;
     height: 100%;
     width: 100%;
@@ -119,7 +120,7 @@ h3{
 }
 
 
-.layer h3{
+.layer h3 {
     width: 100%;
     font-weight: 1000;
     color: black;
@@ -129,17 +130,43 @@ h3{
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
-    
+
 }
 
 
 /* estilos del contenido principal en la pagina de plantel  */
 
+header.plantel {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../img/equipo.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.columna {
+    display: flex;
+}
+
+.column {
+    flex-basis: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    padding-top: 35px;
+}
+
 /* estilos del contenido principal en la pagina de partidos  */
 
 /* estilos del contenido principal en la pagina de galeria  */
 
-header.galeria{
+header.galeria {
     min-height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../img/festejo.jpg);
@@ -148,7 +175,7 @@ header.galeria{
     position: relative;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -157,30 +184,30 @@ header.galeria{
     padding-top: 5px;
 }
 
-.container .box{
+.container .box {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
 }
 
-.container .box .mundial{
+.container .box .mundial {
     display: flex;
     flex-direction: column;
     width: 49.8%;
 }
 
-.container .box .mundial img{
+.container .box .mundial img {
     width: 100%;
     padding-bottom: 5px;
     border-radius: 5px;
     transition: 0.3s;
 }
 
-.full-img{
+.full-img {
     width: 100%;
     height: 100vh;
-    background: rgba(0,0,0,0.9);
+    background: rgba(0, 0, 0, 0.9);
     position: fixed;
     top: 0;
     left: 0;
@@ -190,12 +217,12 @@ header.galeria{
     z-index: 100;
 }
 
-.full-img img{
+.full-img img {
     width: 90%;
     max-width: 750px;
 }
 
-.full-img span{
+.full-img span {
     position: absolute;
     top: 5%;
     right: 5%;
@@ -204,45 +231,46 @@ header.galeria{
     cursor: pointer;
 }
 
-img:hover{
+img:hover {
     transform: scale(0.99);
 }
+
 /* estilos del contenido principal en la pagina de contacto  */
 
 /* nav */
 
-nav{
+nav {
     display: flex;
     padding: 2% 4%;
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
-nav img{
+nav img {
     width: 150px;
 }
 
-.nav-links{
+.nav-links {
     flex: 1;
     text-align: right;
 }
 
-.nav-links ul li{
+.nav-links ul li {
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
     position: relative;
 }
 
-.nav-links ul a{
+.nav-links ul a {
     text-decoration: none;
     color: white;
     font-size: 15px;
 }
 
 
-.nav-links ul li::after{
+.nav-links ul li::after {
     content: "";
     width: 0%;
     height: 2px;
@@ -252,15 +280,15 @@ nav img{
     transition: 0.5s;
 }
 
-.nav-links ul li:hover:after{
+.nav-links ul li:hover:after {
     width: 100%;
 }
 
-nav .fa{
+nav .fa {
     display: none;
 }
 
-.text-box{
+.text-box {
     width: 90%;
     color: white;
     position: absolute;
@@ -270,23 +298,23 @@ nav .fa{
     text-align: center;
 }
 
-.text-box h1{
+.text-box h1 {
     font-size: 55px;
 }
 
-.intro{
+.intro {
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 50px;
 }
 
-@media(max-width: 732px){
-    .nav-links ul li{
+@media(max-width: 732px) {
+    .nav-links ul li {
         display: block;
     }
 
-    .nav-links{
+    .nav-links {
         position: absolute;
         background: #3ec6de;
         height: 100vh;
@@ -298,7 +326,7 @@ nav .fa{
         transition: 1s;
     }
 
-    nav .fa{
+    nav .fa {
         display: block;
         color: white;
         margin: 10px;
@@ -306,23 +334,23 @@ nav .fa{
         cursor: pointer;
     }
 
-    .nav-links ul{
+    .nav-links ul {
         padding: 30px;
     }
 
-    h1{
-    font-size: 50px;
+    h1 {
+        font-size: 50px;
     }
 
-    .container .box{
+    .container .box {
         flex-direction: column;
     }
 
-    .container .box .mundial{
+    .container .box .mundial {
         width: 100%;
     }
 
-    .row{
+    .row {
         flex-direction: column;
     }
 }
