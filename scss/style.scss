@@ -1,0 +1,264 @@
+@import "reset";
+@import "fonts";
+@import "footer";
+
+header.index {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../img/campeones.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.text-box {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    h1 {
+        font-size: 55px;
+    }
+}
+
+.intro {
+    margin: 40px;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    padding: 2% 4%;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        width: 150px;
+    }
+
+    .nav-links {
+        flex: 1;
+        text-align: right;
+    }
+
+    li {
+        list-style: none;
+        display: inline-block;
+        padding: 8px 12px;
+        position: relative;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+    }
+
+    li::after {
+        content: "";
+        width: 0%;
+        height: 2px;
+        background: #3ec6de;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+
+    li:hover:after {
+        width: 100%;
+    }
+
+    .fa {
+        display: none;
+    }
+
+
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    
+
+    .historia-col {
+        display: flex;
+        flex-basis: 33%;
+        border-radius: 5px;
+        margin-bottom: 30px;
+        position: relative;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    padding-top: 35px;
+}
+
+header.galeria {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../img/festejo.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 5px;
+
+    .box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .mundial {
+            display: flex;
+            flex-direction: column;
+            width: 49.8%;
+
+            img {
+                width: 100%;
+                padding-bottom: 5px;
+                border-radius: 5px;
+                transition: 0.3s;
+            }
+        }
+    
+        .full-img {
+            width: 100%;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.9);
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+
+            img {
+                width: 90%;
+                max-width: 750px;
+                
+            }
+
+            span {
+                position: absolute;
+                top: 5%;
+                right: 5%;
+                font-size: 30px;
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+
+    img:hover {
+        transform: scale(0.99);
+    }
+}
+
+header.plantel {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../img/equipo.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    padding-top: 35px;
+}
+.columna {
+    display: flex;
+    .column {
+        flex-basis: 25%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+}
+
+header.partidos {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../img/1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.marcador-partido {
+    width: 700px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 40px auto;
+    text-align: center;
+    font-size: 24px;
+    color: #333333;
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 10px;
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #dddddd;
+            .equipo {
+                text-align: center;
+            }
+            td.resultado {
+                font-weight: bold;
+            }
+            img {
+                width: 75px;
+                height: 60px;
+                margin-right: 10px;
+            }
+        }
+    }
+    .detalles {
+        margin: 5px 0;
+        font-size: 15px
+    }
+}
+
+header.contacto {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../img/partidos.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+@import "queries";
