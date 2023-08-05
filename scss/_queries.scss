@@ -56,6 +56,7 @@
         height: 20px;
         margin-right: 5px;
     }
+
     .columna {
         flex-direction: column;
         align-items: center;
@@ -68,5 +69,22 @@
 
     .column img {
         max-width: fit-content;
+    }
+
+    .video-container {
+        grid-template-columns: 1fr;
+    }
+
+    .masbal {
+        flex-direction: column;
+    }
+
+    .section {
+        align-items: center;
+    }
+
+    .estadios {
+        flex-direction: column;
+        align-items: center;
     }
 }

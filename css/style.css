@@ -279,6 +279,46 @@ header.contacto {
   position: relative;
 }
 
+.video-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+.video-container iframe {
+  width: 100%;
+  height: 250px;
+}
+
+.estadios {
+  display: flex;
+  justify-content: center;
+}
+.estadios .estadio {
+  margin-right: 5px;
+  width: 400px;
+  height: auto;
+  margin-top: 5px;
+}
+
+.masbal {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: px;
+}
+.section img {
+  max-width: 500px;
+  height: auto;
+  margin-bottom: 5px;
+}
+
 @media (max-width: 732px) {
   .nav-links {
     position: absolute;
@@ -336,6 +376,19 @@ header.contacto {
   }
   .column img {
     max-width: fit-content;
+  }
+  .video-container {
+    grid-template-columns: 1fr;
+  }
+  .masbal {
+    flex-direction: column;
+  }
+  .section {
+    align-items: center;
+  }
+  .estadios {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
